@@ -1,0 +1,28 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Smythe", system-ui;
+}
+
+img {
+  max-width: 100%;
+}
+
+button,
+img,
+input {
+  display: block;
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+p {
+  line-height: 1.6;
+}
