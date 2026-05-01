@@ -1,0 +1,53 @@
+.menu {
+  padding-top: 4.18rem;
+}
+
+.menu__list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2.8rem;
+}
+
+.menu__item {
+  display: flex;
+  align-items: center;
+  padding-bottom: 3.18rem;
+  border-bottom: 1px solid #d2d2d2;
+}
+
+.menu__item-emoji {
+  font-size: 4.875rem;
+  margin-right: 2rem;
+}
+
+.menu__item-title {
+  font-size: 1.75rem;
+  font-weight: 400;
+}
+
+.menu__item-description {
+  color: #8b8b8b;
+}
+
+.menu__item-price {
+  font-size: 1.25rem;
+}
+
+.menu__item-add-button {
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  margin-left: auto;
+  font-weight: 200;
+  font-size: 2rem;
+  font-family: "Inter", sans-serif;
+  border-radius: 50%;
+  border: solid 1.5px #dedede;
+  transition: all 300ms;
+  cursor: pointer;
+}
+
+.menu__item-add-button:hover,
+.menu__item-add-button:focus {
+  background-color: #dedede;
+}
