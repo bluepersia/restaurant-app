@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="src/css/blocks/menu.css" />
     <link rel="stylesheet" href="src/css/blocks/order.css" />
     <link rel="stylesheet" href="src/css/blocks/button.css" />
+    <link rel="stylesheet" href="src/css/blocks/checkout.css" />
   </head>
   <body>
     <header class="header">
@@ -45,17 +46,58 @@
       </section>
 
       <section class="order" id="order">
-        <div class="order__inner container">
+        <div class="order__inner container" data-inner>
           <h2 class="order__title">Your order</h2>
 
           <div class="order__summary" data-summary></div>
 
-          <button class="order__complete-button button" data-complete>
+          <button
+            class="order__complete-button button"
+            data-complete
+            aria-haspopup="dialog"
+            aria-expanded="false"
+            aria-controls="checkout"
+          >
             Complete order
           </button>
         </div>
       </section>
     </main>
+
+    <dialog class="checkout" id="checkout" aria-label="Checkout">
+      <h2 class="checkout__title">Enter card details</h2>
+      <form class="checkout__form" data-form>
+        <label for="full-name" class="sr-only">Name:</label>
+        <input
+          type="text"
+          id="full-name"
+          name="full-name"
+          placeholder="Enter your name"
+          class="checkout__input"
+          required
+        />
+        <label for="card-num" class="sr-only">Card Number:</label>
+        <input
+          type="text"
+          id="card-num"
+          name="card-num"
+          placeholder="Enter card number"
+          class="checkout__input"
+          pattern="[0-9]+"
+          required
+        />
+        <label for="cvv" class="sr-only">CVV:</label>
+        <input
+          type="text"
+          id="cvv"
+          name="cvv"
+          placeholder="Enter CVV"
+          class="checkout__input"
+          required
+        />
+        <button class="checkout__pay-button button">Pay</button>
+      </form>
+    </dialog>
     <script src="./dist/js/index.js" type="module"></script>
   </body>
 </html>
