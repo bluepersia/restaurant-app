@@ -53,3 +53,11 @@
 .order__total {
   margin-bottom: 3.31rem;
 }
+
+.order__submitted {
+  background-color: #ecfdf5;
+  padding: 3.375rem;
+  color: #065f46;
+  text-align: center;
+  font-size: 2rem;
+}

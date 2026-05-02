@@ -48,4 +48,10 @@ function orderToHTML(order: Order): string {
             `;
 }
 
-export { cartToOrder, orderToHTML };
+function createSubmissionHTML(name: string): string {
+  return `
+        <p class="order__submitted">Thanks, ${name}! Your order is on its way!</p>
+    `;
+}
+
+export { cartToOrder, orderToHTML, createSubmissionHTML };

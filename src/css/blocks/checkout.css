@@ -1,0 +1,35 @@
+.checkout {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  background-color: white;
+  width: 90%;
+  max-width: 524px;
+  height: fit-content;
+  box-shadow: 5px 5px 255px 0px rgba(0, 0, 0, 0.5);
+  padding: 2.93rem 1.43rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border-radius: 4px;
+  border: none;
+}
+
+.checkout__title {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 2.8rem;
+}
+.checkout__form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.43rem;
+}
+
+.checkout__input {
+  width: 100%;
+  padding: 1rem 1.6rem;
+  border: 1.3px solid #757575;
+  border-radius: 4px;
+}

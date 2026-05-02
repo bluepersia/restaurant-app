@@ -1,6 +1,8 @@
 import type { CartItem, CartState } from "./CartContext.types";
 
 function addToCart(state: CartState, id: number): CartState {
+  if (state.isFrozen) return state;
+
   const newCart: CartItem[] = [...state.cart];
   const itemInCart: CartItem | undefined = state.cart.find(
     (item) => item.id === id,
@@ -23,6 +25,8 @@ function addToCart(state: CartState, id: number): CartState {
 }
 
 function removeFromCart(state: CartState, id: number): CartState {
+  if (state.isFrozen) return state;
+
   const itemInCart: CartItem | undefined = state.cart.find(
     (item) => item.id === id,
   );
