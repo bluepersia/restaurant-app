@@ -9,6 +9,7 @@ type CartState = {
 
 type CartContextType = {
   addItem: (id: number) => void;
+  removeItem: (id: number) => void;
   cartChanged: Array<(cart: CartItem[]) => void>;
 };
 

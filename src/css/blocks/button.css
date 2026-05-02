@@ -1,0 +1,17 @@
+.button {
+  width: 100%;
+  background-color: #16db99;
+  border: none;
+  border-radius: 3px;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 1.125em 2em;
+  font-weight: bold;
+  transition: filter 300ms;
+  cursor: pointer;
+}
+
+.button:hover,
+.button:focus {
+  filter: brightness(125%);
+}

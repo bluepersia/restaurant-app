@@ -1,0 +1,55 @@
+.order {
+  padding: 2.81rem 0;
+  display: none;
+}
+
+.order__title {
+  text-align: center;
+  font-size: 1.75rem;
+  font-weight: 400;
+  margin-bottom: 4rem;
+}
+
+.order__items {
+  padding-bottom: 2rem;
+  border-bottom: 2px solid #393333;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5rem;
+}
+
+.order__line {
+  display: flex;
+  align-items: center;
+}
+
+.order__line-title {
+  font-weight: 400;
+  font-size: 1.75rem;
+  margin-right: 0.81rem;
+}
+
+.order__line-remove-button {
+  border: none;
+  background: transparent;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 0.75rem;
+  color: #bbbbbb;
+  cursor: pointer;
+  transition: all 300ms;
+}
+
+.order__line-remove-button:hover,
+.order__line-remove-button:focus {
+  color: darkgrey;
+}
+
+.order__line-price {
+  margin-left: auto;
+  font-size: 1.25rem;
+}
+
+.order__total {
+  margin-bottom: 3.31rem;
+}
